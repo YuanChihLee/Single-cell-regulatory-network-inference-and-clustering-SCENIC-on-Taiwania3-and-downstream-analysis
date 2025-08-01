@@ -80,6 +80,6 @@ The purpose of this script is to **generate data**. To achieve the final goal, t
 
 This requires a separate analysis script (e.g., in Python) that performs the following logic:
 1.  Read all `run_X/reg.csv` files.
-2.  Count the frequency of each unique TF-Target regulatory pair.
+2.  Merge (find the all regulon predicted from the SCENIC) or count the frequency of each unique TF-Target regulatory pair.
 3.  Set a threshold (e.g., found in at least 3 out of 10 runs) to filter for stable regulons.
 4.  Export this stable set into a final, high-confidence regulon list, which can then be used for downstream AUCell analysis or biological interpretation.
